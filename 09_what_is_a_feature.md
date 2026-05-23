@@ -8,7 +8,8 @@ you give to the model to help it make predictions.
 - Humidity
 - Cloud cover
 - Wind speed
-Each of these is a feature.
+Each of these is a feature. Together they help the model 
+predict whether it will rain or not.
 
 ## Example — Spam Classifier:
 - Number of exclamation marks
@@ -16,15 +17,23 @@ Each of these is a feature.
 - Length of email
 - Number of links
 
-## Feature Engineering:
-Sometimes you create better features from raw data.
-Example: from pickup/dropoff coordinates → calculate distance.
-Better features = better model.
+## Example — Predicting house price:
+- Size of the house
+- Number of bedrooms
+- Location
+- Age of the building
+All inputs that help predict the final price.
 
-## From the Padel Project:
-Features used for shot classification:
-- Previous position of player (prev_x, prev_y)
-- Current position (center_x, center_y)
-- dx — horizontal movement
-- dy — vertical movement
-- total_movement — overall movement magnitude
+## Feature Engineering:
+Sometimes raw data isn't directly useful — you create 
+better features from it.
+
+Example: You have a taxi pickup location and dropoff 
+location as coordinates. Instead of using raw coordinates 
+as features, you calculate the distance between them. 
+That calculated distance is a much more useful feature 
+for predicting fare price.
+
+Better features = better model.
+Even a simple model with great features can outperform 
+a complex model with poor features.
