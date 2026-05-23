@@ -43,9 +43,3 @@ Same formula used in the padel project for total_movement!
 - Medical diagnosis
 - Handwriting recognition
 
-## Connection to your project:
-Your career recommendation system used cosine similarity 
-which is similar in concept to KNN — find most similar 
-profiles and recommend based on them. Difference is cosine 
-similarity measures angle between vectors rather than 
-straight line distance.
